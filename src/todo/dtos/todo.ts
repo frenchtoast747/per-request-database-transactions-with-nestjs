@@ -1,10 +1,4 @@
-import { Field, ID, ObjectType } from '@nestjs/graphql';
-
-@ObjectType()
-export class Todo {
-  @Field(() => ID)
+export type Todo = {
   id: number;
-
-  @Field()
   title: string;
 }
